@@ -10,15 +10,34 @@ xcelium.d/
 *.vcd
 *.wlf
 *.fsdb
+*.dd
+*.key
+*.globals
 
 # Logs and reports (optional: keep final reports)
 *.log
+*.log1
+*.log2
+*.log3
+*.logv
+*.logv1
 *.jou
 *.cmd
+*.cmd1
+*.cmd2
+*.cmd3
+*.rpt
+*.map
 
 # Temporary files
 *.tmp
+*.bin
+*.key
 *.bak
 *.old
 *.mr
 *.syn
+*.history
+*.tif
+*.gz
+*.dat
