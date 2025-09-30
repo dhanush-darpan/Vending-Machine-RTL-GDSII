@@ -1,0 +1,24 @@
+# Cadence tool-generated files
+INCA_libs/
+.simvision/
+vendingMachine.enc.dat/
+fv/
+
+# Simulation outputs
+*.shm/
+xcelium.d/
+*.vcd
+*.wlf
+*.fsdb
+
+# Logs and reports (optional: keep final reports)
+*.log
+*.jou
+*.cmd
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+*.mr
+*.syn
