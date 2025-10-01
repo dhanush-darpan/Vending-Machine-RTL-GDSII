@@ -38,18 +38,18 @@ Test vectors are in testbench.v — simple clock generator + stimulus sequences 
 
 ### Directory structure (top-level — trimmed)
 Vending Machine/
-├─ vendingMachine.v # RTL
-├─ testbench.v # Testbench / simulation stimulus
-├─ vm_netlist.v # Gate-level netlist (Genus output)
-├─ run.tcl # Example synthesis script (Genus)
-├─ input_constraints.sdc # Input constraints for synthesis/timing
-├─ vm_output.sdc # Output constraints (synth generated)
-├─ vendingMachine.gds # Final GDSII
-├─ vendingMachine.enc.dat/ # Encapsulated design data (LEF, libs, view prefs)
-├─ fv/ # functional verification / fv maps
-├─ INCA_libs/ # cadence/incisive support (irun)
-├─ .simvision/ # Simvision bookmarks/config
-└─ reports/ ... # timing/area/power reports (produced by flows)
+├─ vendingMachine.v # RTL  
+├─ testbench.v # Testbench / simulation stimulus  
+├─ vm_netlist.v # Gate-level netlist (Genus output)  
+├─ run.tcl # Example synthesis script (Genus)  
+├─ input_constraints.sdc # Input constraints for synthesis/timing  
+├─ vm_output.sdc # Output constraints (synth generated)  
+├─ vendingMachine.gds # Final GDSII  
+├─ vendingMachine.enc.dat/ # Encapsulated design data (LEF, libs, view prefs)  
+├─ fv/ # functional verification / fv maps  
+├─ INCA_libs/ # cadence/incisive support (irun)  
+├─ .simvision/ # Simvision bookmarks/config  
+└─ reports/ ... # timing/area/power reports (produced by flows)  
 
 
 Use zip contents or `ls` to review the full tree. The repository includes .git/ from the original environment; you can remove it if you want a fresh repo.
@@ -110,8 +110,7 @@ If there is a provided P&R TCL (check inside vendingMachine.enc.dat or fv/), sou
 
 ### 4) LVS / DRC / Signoff
 
-Use Foundry PDK views (DRC/LVS decks) with Calibre or Mentor tools as per your flow. This zip does not include proprietary DRC/LVS decks — run DRC/LVS using your foundry-provided rules.
-
+Use Foundry PDK views (DRC/LVS decks) with Calibre or Mentor tools as per your flow.
 Gate-level netlist (vm_netlist.v) and the LEF/GDS are present to cross-check.
 
 ## Files of special interest
